@@ -1,3 +1,51 @@
-h1 {
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 800px;
+    width: 800px;
+    border: 1px solid grey;
+}
+
+.cell {
+    flex: 0 0 6.25%;
+    height: 6.25%;
     text-align: center;
+    box-sizing: border-box;
+    /* border: 1px solid grey; */
+    background-color: aliceblue;
+}
+
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+button {
+    border: 1px solid tan;
+    background-color: tan;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: transparent;
+    color: tan;
 }
